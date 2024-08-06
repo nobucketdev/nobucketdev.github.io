@@ -1,0 +1,121 @@
+:root {
+    --main-bg-color: #ffffff;
+    --dark-main-bg-color: #121212;
+    --main-text-color: #000000;
+    --contrast-text-color: #e9f5ff;
+    --first-accent-color: #0075eb;
+    --first-accent-darker-color: #004d9b;
+    --second-accent-color: #f7d200;
+    --second-accent-decrease-color: #fff19f;
+}
+
+#hero {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    background: linear-gradient(135deg,var(--first-accent-darker-color),var(--first-accent-color));
+}
+
+#hero-text{
+    color: var(--contrast-text-color);
+    max-width: calc(30% + 70px);
+    max-height: 50%;
+    padding: 40px;
+    margin-right: 20px;
+}
+
+#hero-text h1 {
+    font-size: xxx-large;
+    line-height: 42px;
+    margin-bottom: 10px;
+}
+
+#hero-text p {
+    font-family: 'Inter';
+    font-size: 1.4em;
+    line-height: 32px;
+}
+
+#hero-text y {
+    color: var(--second-accent-color);
+    text-shadow: 0px 0px 10px var(--second-accent-color);
+}
+
+body.dark-theme #hero{
+    background: linear-gradient(135deg,var(--first-accent-darker-color),var(--first-accent-color))
+}
+
+body.dark-theme #hero-text {
+    color: var(--contrast-text-color);
+}
+
+body.dark-theme #hero-text y {
+    color: var(--second-accent-decrease-color);
+    text-shadow: 0px 0px 10px var(--second-accent-decrease-color);
+}
+
+.cta {
+    display: flex;
+    align-items: flex-start;
+}
+
+.login, .signup{
+    display: flex;
+    flex-direction: row;
+    margin-left: 0px;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-style: solid;
+    border-radius: 60px;
+    border-width: 1px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.login {
+    background: var(--second-accent-lighter-color);
+    margin-right: 0px;
+    border-color: var(--second-accent-darker-color);
+    box-shadow: 3px 3px 0px #cf9f00;
+}
+
+.signup {
+    margin-left: 20px;
+    background: var(--first-accent-lighter-color);
+    margin-right: 0px;
+    border-color: var(--first-accent-darker-color);
+    box-shadow: 3px 3px 0px var(--first-accent-darker-color);
+}
+
+.login:hover {
+    box-shadow: -3px -3px 0px #cf9f00;
+    margin-right: 0px;
+}
+
+.signup:hover {
+        box-shadow: -3px -3px 0px var(--first-accent-darker-color);
+        margin-right: 0px;
+}
+
+.login a{
+    color: var(--second-accent-darker-color);
+    font-size: large;
+    text-decoration: none;
+    padding-top: 3px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.signup a {
+    color: var(--first-accent-darker-color);
+    font-size: large;
+    text-decoration: none;
+    padding-top: 3px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
