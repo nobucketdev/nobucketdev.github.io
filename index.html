@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Let's Try Something Cool!</title>
-    <link rel="stylesheet" href="nav_style.css">
-    <link rel="stylesheet" href="global_style.css">
-    <link rel="stylesheet" href="hero_style.css">
+    <link rel="stylesheet" href="styles/nav_style.css">
+    <link rel="stylesheet" href="styles/global_style.css">
+    <link rel="stylesheet" href="styles/hero_style.css">
+    <link rel="stylesheet" href="styles/feature_style.css">
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -29,9 +30,9 @@
                 <li class="menu-item forum"><a href="#">Forum</a></li>
                 <li class="menu-item icon"><a href="#"><i id="moon-icon" class="fa-solid fa-house"></i></a></li>
                 <li class="menu-item icon"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                <li onclick="showSidebar()" class="menu-item menubtn">
+                <abbr title="More"><li onclick="showSidebar()" class="menu-item menubtn">
                     <a href="#"><i class="fa fa-bars"></i></a>
-                </li>
+                </li></abbr>
             </ul>
             <ul class="sidebar">
                 <li onclick="hideSidebar()" class="close-button">
@@ -51,12 +52,29 @@
             <h1>Share Your <y>Tools</y>,<br />Empower the Community</h1>
             <p>Share your awesome tools, discover new ones, and connect with fellow creators. Let's build something amazing together!</p>
             <div class="cta">
-                <li class="login"><a href="#">Login</a></li>
                 <li class="signup"><a href="#">Sign Up for FREE</a></li>
             </div>
         </div>
         <div id="hero-image">
             <div id="tab-one">
+            </div>
+        </div>
+    </section>
+    <section id="feature">
+        <div class="main-container">
+            <h1>Featured tools <i class="fa-solid fa-caret-right"></i></h1>
+            <div class="card-container">
+                <div class="fancy-bg">
+                    <div class="card">
+                        <h2 class="tool-title">File Genenator</h2>
+                        <p class="description">This tool is made for fun</p>
+                        <p>by tools_heaven</p>
+                        <div>
+                            <p><i class="fa-solid fa-eye"></i> 12000</p>
+                            <p><i class="fa-solid fa-thumbs-up"></i> 2000</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
