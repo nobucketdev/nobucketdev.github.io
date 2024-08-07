@@ -1,13 +1,3 @@
-:root {
-    --main-bg-color: #ffffff;
-    --dark-main-bg-color: #121212;
-    --main-text-color: #000000;
-    --contrast-text-color: #e9f5ff;
-    --first-accent-color: #0075eb;
-    --first-accent-darker-color: #004d9b;
-    --second-accent-color: #f7d200;
-    --second-accent-decrease-color: #fff19f;
-}
 
 #hero {
     display: flex;
@@ -31,7 +21,6 @@
 }
 
 #hero-text p {
-    font-family: 'Inter';
     font-size: 1.4em;
     line-height: 32px;
 }
@@ -59,63 +48,37 @@ body.dark-theme #hero-text y {
     align-items: flex-start;
 }
 
-.login, .signup{
+.signup{
     display: flex;
     flex-direction: row;
     margin-left: 0px;
     margin-right: 10px;
-    margin-top: 5px;
+    margin-top: 12px;
     margin-bottom: 5px;
-    border-style: solid;
+    border-style: none;
     border-radius: 60px;
     border-width: 1px;
     font-weight: 600;
-    transition: all 0.3s ease;
-}
-
-.login {
-    background: var(--second-accent-lighter-color);
-    margin-right: 0px;
-    border-color: var(--second-accent-darker-color);
-    box-shadow: 3px 3px 0px #cf9f00;
+    transition: transform 0.3s ease;
 }
 
 .signup {
-    margin-left: 20px;
     background: var(--first-accent-lighter-color);
-    margin-right: 0px;
-    border-color: var(--first-accent-darker-color);
-    box-shadow: 3px 3px 0px var(--first-accent-darker-color);
-}
-
-.login:hover {
-    box-shadow: -3px -3px 0px #cf9f00;
     margin-right: 0px;
 }
 
 .signup:hover {
-        box-shadow: -3px -3px 0px var(--first-accent-darker-color);
-        margin-right: 0px;
-}
-
-.login a{
-    color: var(--second-accent-darker-color);
-    font-size: large;
-    text-decoration: none;
-    padding-top: 3px;
-    padding-bottom: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-
+    margin-right: 0px;
+    transform: scale(105%);
+    transform: translateY(4px);
 }
 
 .signup a {
     color: var(--first-accent-darker-color);
     font-size: large;
     text-decoration: none;
-    padding-top: 3px;
-    padding-bottom: 5px;
+    padding-top: 6px;
+    padding-bottom: 6px;
     padding-left: 10px;
     padding-right: 10px;
 }
-

@@ -1,27 +1,13 @@
-:root {
-    --main-bg-color: #ffffff;
-    --dark-main-bg-color: #121212;
-    --main-text-color: #000000;
-    --contrast-text-color: #e9f5ff;
-    --first-accent-color: #0075eb;
-    --first-accent-darker-color: #004d9b;
-    --first-accent-lighter-color: #a0d0ff;
-    --second-accent-color: #f7d200;
-    --second-accent-darker-color: #cf9f00;
-    --second-accent-lighter-color: #fff8d0;
-}
 /* Navigation styling */
 nav {
     display: flex;
     flex-direction: column;
 }
 
-
-nav .menu {
+.menu {
     width: 100%;
     list-style: none;
     display: flex;
-    padding: 0px;
 }
 
 .menu li, .sidebar li {
@@ -79,15 +65,13 @@ body.dark-theme .menu-item a:hover {
     position: fixed;
     top: 0;
     right: 0;
-    height: 100vh;
     width: 250px;
+    height: 100000px;
     z-index: 999;
     background: #ffffff8a;
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.192);
     display: none;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
     backdrop-filter: blur(5px);
     transition: background-color 0.3s;
 }
@@ -176,6 +160,7 @@ body.dark-theme .theme-toggle .fa-sun {
 }
 
 .logotxt {
+    font-family: 'Titillium Web';
     height: 100%;
     padding-left: 15px;
     text-decoration: none;

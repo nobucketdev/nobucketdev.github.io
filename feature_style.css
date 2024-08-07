@@ -1,0 +1,23 @@
+#feature {
+    display: flex;
+}
+
+.main-container {
+    margin: 20px;
+}
+
+.card-container {
+    background-color: #e0e0e0;
+    margin-top: 10px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+
+.card {
+    width: 200px;
+    padding: 10px;
+    padding-left: 16px;
+    border-radius: 16px;
+    background: #ffffff;
+}

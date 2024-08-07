@@ -1,0 +1,13 @@
+:root {
+    --main-bg-color: #f0f0f0;
+    --dark-main-bg-color: #121212;
+    --main-text-color: #333333 ;
+    --contrast-text-color: #E0E0E0;
+    --first-accent-color: #1E90FF;
+    --first-accent-darker-color: #104E8B;
+    --first-accent-lighter-color: #ADD8E6;
+    --second-accent-color: #FFD700;
+    --second-accent-darker-color:  #B8860B;
+    --second-accent-lighter-color: #FFE4B5;
+    --contrast-accent-color: #E74C3C;
+}
