@@ -11,13 +11,8 @@ body {
     font-family: 'Source Sans 3';
     min-height: 100vh;
     background: var(--main-bg-color);
+    color: var(--main-text-color);
     transition: background-color 0.3s, color 0.3s;
-}
-
-/* Dark theme body styling */
-body.dark-theme {
-    background: #121212;
-    color: #e0e0e0;
 }
 
 abbr {

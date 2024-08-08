@@ -48,14 +48,14 @@ body.dark-theme .menu-item a {
     color: #e0e0e0;
 }
 
-.menu-item a:hover {
+.menu-item a:hover , .active a {
     color: var(--first-accent-color);
-    background: #287eff10;
+    background: #287eff2c;
     font-weight: bolder;
 
 }
 
-body.dark-theme .menu-item a:hover {
+body.dark-theme .menu-item a:hover, body.dark-theme .active a{
     color: var(--first-accent-color);
     background: #348cff15;
 }
@@ -108,7 +108,6 @@ body.dark-theme .sidebar a {
     background: #287eff0a;
     font-weight: bolder;
 }
-
 /* Button styling */
 .theme-toggle {
     border: none;

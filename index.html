@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles/global_style.css">
     <link rel="stylesheet" href="styles/hero_style.css">
     <link rel="stylesheet" href="styles/feature_style.css">
+    <link rel="stylesheet" href="styles/cursor.css">
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -23,8 +24,8 @@
                         <i id="sun-icon" class="fa-solid fa-sun"></i>
                     </button>
                 </li>
-                <li class="menu-item home"><a href="#">Home</a></li>
-                <li class="menu-item search"><a href="#">Search</a></li>
+                <li class="menu-item home active"><a href="index.html">Home</a></li>
+                <li class="menu-item search"><a href="search.html">Search</a></li>
                 <li class="menu-item create"><a href="#">Create</a></li>
                 <li class="menu-item purchase"><a href="#">Purchase</a></li>
                 <li class="menu-item forum"><a href="#">Forum</a></li>
@@ -62,19 +63,58 @@
     </section>
     <section id="feature">
         <div class="main-container">
-            <h1>Featured tools <i class="fa-solid fa-caret-right"></i></h1>
-            <div class="card-container">
-                <div class="fancy-bg">
-                    <div class="card">
-                        <h2 class="tool-title">File Genenator</h2>
-                        <p class="description">This tool is made for fun</p>
-                        <p>by tools_heaven</p>
-                        <div>
-                            <p><i class="fa-solid fa-eye"></i> 12000</p>
-                            <p><i class="fa-solid fa-thumbs-up"></i> 2000</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="top-feature-bar">
+                <h1>Featured tools <i class="fa-solid fa-caret-right"></i></h1>
+                <a href="search.html" class="link-to-search mag-cursor">Go to search for more</a>
+            </div>
+            <div class="slide-list">
+                                <!-- Project card 1 -->
+                                <div class="card-container oneweekly">
+                                    <div class="fancy-bg">
+                                        <div class="card card-oneweekly">
+                                            <h2 class="tool-title">File Genenator</h2>
+                                            <div class="label-group">
+                                                <div class='label oneweekly'>
+                                                    <p>#1 weekly</p>
+                                                </div>
+                                                <div class='label loved'>
+                                                    <p>#1 Loved</p>
+                                                </div>
+                                            </div>
+                                            <p class="description">This tool is made for fun</p>
+                                            <p class="author">by <b>tools_heaven</b></p>
+                                            <div class='tool-info'>
+                                                <p class="view"><i class="fa-solid fa-eye"></i> 12768</p>
+                                                <hr>
+                                                <p class="like"><i class="fa-solid fa-thumbs-up"></i> 569</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="card-container twoweekly">
+                                    <div class="fancy-bg">
+                                        <div class="card card-twoweekly">
+                                            <h2 class="tool-title">File Genenator</h2>
+                                            <div class="label-group">
+                                                <div class='label twoweekly'>
+                                                    <p>#2 weekly</p>
+                                                </div>
+                                                <div class='label loved'>
+                                                    <p>#4 Loved</p>
+                                                </div>
+                                            </div>
+                                            <p class="description">This tool is made for fun</p>
+                                            <p class="author">by <b>tools_heaven</b></p>
+                                            <div class='tool-info'>
+                                                <p class="view"><i class="fa-solid fa-eye"></i> 7860</p>
+                                                <hr>
+                                                <p class="like"><i class="fa-solid fa-thumbs-up"></i> 237</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
             </div>
         </div>
     </section>

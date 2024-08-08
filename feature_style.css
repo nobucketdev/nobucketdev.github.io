@@ -2,22 +2,117 @@
     display: flex;
 }
 
+.top-feature-bar {
+    display: flex;
+    align-items: center;
+}
+
+.link-to-search {
+    position: relative;
+    left: 20px;
+    text-decoration: underline;
+}
+
 .main-container {
     margin: 20px;
 }
 
-.card-container {
-    background-color: #e0e0e0;
-    margin-top: 10px;
-    border-radius: 20px;
-    padding: 10px;
+.slide-list {
+    display: flex;
 }
 
+.card-container {
+    background-color: var(--third-bg-color);
+    margin: 10px;
+    border-radius: 20px;
+    padding: 6px;
+    transition: transform 0.35s ease-in-out;
+}
+
+.card-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px gray;
+}
+
+.card h2{
+    line-height: 28px;
+}
 
 .card {
     width: 200px;
     padding: 10px;
     padding-left: 16px;
     border-radius: 16px;
-    background: #ffffff;
+    background: var(--fourth-bg-color);
+}
+
+.card .dark-theme {
+    background: var(--third-bg-color);
+}
+
+.card p {
+    line-height: 18px;
+}
+
+.label-group {
+    display: flex;
+}
+
+.label {
+    position: relative;
+    right: 1px;
+    line-height: 16px;
+    margin-bottom: 8px;
+    margin-top: 2px;
+    margin-right: 5px;
+    padding: 1px;
+    padding-left: 5px;
+    padding-right: 6px;
+    max-width: fit-content;
+    border-radius: 20px;
+    font-size: smaller;
+    font-weight: 550;
+}
+
+.oneweekly {
+    background: linear-gradient(135deg,var(--one-weekly) 20px,var(--one-weekly-end));
+}
+
+.card-oneweekly {
+    box-shadow: inset 0px 0px 15px var(--one-weekly);
+}
+
+.twoweekly {
+    background: linear-gradient(135deg,var(--two-weekly) 20px,var(--two-weekly-end));
+    box-shadow: inset 3px 3px 9px var(--two-weekly);
+}
+
+.card-twoweekly {
+    box-shadow: inset 0px 0px 15px var(--two-weekly);
+}
+
+.loved {
+    background: var(--loved);
+}
+
+.description {
+    margin: 0;
+}
+
+.author {
+    margin-bottom: 5px;
+    color: var(--des-text);
+    font-size: 15px;
+}
+
+.tool-info {
+    display: flex;
+}
+
+.view {
+    margin-right: 16px;
+}
+
+.like {
+    margin-left: 16px;
 }
