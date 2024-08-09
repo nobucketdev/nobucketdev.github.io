@@ -2,7 +2,7 @@
     --main-bg-color: #f0f0f0;
     --second-bg-color: #d0d0d0;
     --third-bg-color: #e0e0e0;
-    --fourth-bg-color: #fafafa;
+    --fourth-bg-color: #ffffff;
     --dark-main-bg-color: #121212;
     --main-text-color: #000000;
     --des-text: #424242;
@@ -15,6 +15,7 @@
     --second-accent-lighter-color: #fff8d0;
     --one-weekly: #ffda74;
     --one-weekly-end: #e7aa00;
+    --one-weekly-bg: #fff7d6;
     --two-weekly: #dddddd;
     --two-weekly-end: #949494;
     --loved: #ff6060;
@@ -24,7 +25,7 @@
         --main-bg-color: #121212;
         --second-bg-color: #252525;
         --third-bg-color: #383838;
-        --fourth-bg-color: #474747;
+        --fourth-bg-color: #2e2e2e;
         --main-text-color: #eeeeee;
         --des-text: #afafaf;
         --first-accent-color: #0075eb;
@@ -34,6 +35,7 @@
         --second-accent-darker-color: #cf9f00;
         --second-accent-lighter-color: #fff8d0;
         --one-weekly: #d69d00;
+        --one-weekly-bg: #3f3712;
         --two-weekly: #6d6d6d;
         --two-weekly-end: #494949;
         --one-loved: #e60000;

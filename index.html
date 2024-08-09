@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Let's Try Something Cool!</title>
-    <link rel="stylesheet" href="nav_style.css">
-    <link rel="stylesheet" href="global_style.css">
-    <link rel="stylesheet" href="hero_style.css">
-    <link rel="stylesheet" href="feature_style.css">
-    <link rel="stylesheet" href="cursor.css">
+    <link rel="stylesheet" href="styles/nav_style.css">
+    <link rel="stylesheet" href="styles/global_style.css">
+    <link rel="stylesheet" href="styles/hero_style.css">
+    <link rel="stylesheet" href="styles/feature_style.css">
+    <link rel="stylesheet" href="styles/cursor.css">
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -18,22 +18,34 @@
         <nav class="navigation">
             <ul class="menu">
                 <li class="logo"><a href="#" class="logotxt"><b>Tools</b>Heaven</a></li>
-                <li class="button-container">
-                    <button id="theme-toggle" class="theme-toggle">
-                        <i id="moon-icon" class="fa-solid fa-moon"></i>
-                        <i id="sun-icon" class="fa-solid fa-sun"></i>
-                    </button>
-                </li>
-                <li class="menu-item home active"><a href="index.html">Home</a></li>
-                <li class="menu-item search"><a href="search.html">Search</a></li>
-                <li class="menu-item create"><a href="#">Create</a></li>
-                <li class="menu-item purchase"><a href="#">Purchase</a></li>
-                <li class="menu-item forum"><a href="#">Forum</a></li>
-                <li class="menu-item icon"><a href="#"><i id="moon-icon" class="fa-solid fa-house"></i></a></li>
-                <li class="menu-item icon"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                <abbr title="More"><li onclick="showSidebar()" class="menu-item menubtn">
-                    <a href="#"><i class="fa fa-bars"></i></a>
-                </li></abbr>
+                        <li class="button-container">
+                            <button id="theme-toggle" class="theme-toggle">
+                                <i id="moon-icon" class="fa-solid fa-moon"></i>
+                                <i id="sun-icon" class="fa-solid fa-sun"></i>
+                            </button>
+                        </li>
+                        <li class="menu-item home active"><a href="index.html">Home</a></li>
+                        <li class="menu-item search"><a href="search.html">Search</a></li>
+                        <li class="menu-item create"><a href="#">Toplist <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M480-345 240-585l56-56 184 183 184-183 56 56-240 240Z"/></svg></a>
+                            <ul class="drop-down">
+                                <div class="drop-down-container">
+                                <h1>Popular tools</h1>
+                                <li><a>Top by Loved</a></li>
+                                <li><a>Top by Used</a></li>
+                                <li><a>Top by category</a></li>
+                                <h1>For you</h1>
+                                <li><a>Tools for you</a></li>
+                                </div>
+                            </ul>
+                        </li>
+                        
+                        <li class="menu-item purchase"><a href="#">Purchase</a></li>
+                        <li class="menu-item forum"><a href="#">Forum <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M480-345 240-585l56-56 184 183 184-183 56 56-240 240Z"/></svg></a></li>
+                        <li class="menu-item icon"><a href="#"><i id="moon-icon" class="fa-solid fa-house"></i></a></li>
+                        <li class="menu-item icon"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                        <abbr title="More"><li onclick="showSidebar()" class="menu-item menubtn">
+                            <a href="#"><i class="fa fa-bars"></i></a>
+                        </li></abbr>
             </ul>
             <ul class="sidebar">
                 <li onclick="hideSidebar()" class="close-button">
