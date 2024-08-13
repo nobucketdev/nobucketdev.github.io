@@ -15,6 +15,7 @@
 
 .main-container {
     margin: 20px;
+    overflow: hidden;
 }
 
 .slide-list {
@@ -24,7 +25,7 @@
 .card-container {
     background-color: var(--third-bg-color);
     margin: 10px;
-    border-radius: 20px;
+    border-radius: 6px;
     padding: 6px;
     transition: transform 0.35s ease-in-out;
 }
@@ -42,7 +43,6 @@
     width: 200px;
     padding: 10px;
     padding-left: 16px;
-    border-radius: 16px;
     background: var(--fourth-bg-color);
 }
 
@@ -69,7 +69,6 @@
     padding-left: 5px;
     padding-right: 6px;
     max-width: fit-content;
-    border-radius: 20px;
     font-size: smaller;
     font-weight: 550;
 }

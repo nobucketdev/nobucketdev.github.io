@@ -1,5 +1,6 @@
 
 #hero {
+    margin-top: 45px;
     display: flex;
     flex-direction: row;
     align-content: flex-start;
@@ -56,14 +57,14 @@ body.dark-theme #hero-text y {
     margin-top: 12px;
     margin-bottom: 5px;
     border-style: none;
-    border-radius: 60px;
+    border-radius: 8px;
     border-width: 1px;
     font-weight: 600;
     transition: transform 0.3s ease;
 }
 
 .signup {
-    background: var(--first-accent-lighter-color);
+    background: var(--first-accent-color);
     margin-right: 0px;
 }
 
@@ -74,11 +75,9 @@ body.dark-theme #hero-text y {
 }
 
 .signup a {
-    color: var(--first-accent-darker-color);
+    color: var(--contrast-text-color);
     font-size: large;
+    font-weight: 400;
     text-decoration: none;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 12px;
 }

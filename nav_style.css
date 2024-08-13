@@ -1,7 +1,8 @@
 /* Navigation styling */
 nav {
     width: 100%;
-    display: flex;
+    position: fixed;
+    top: 0px;
     align-items: center;
     justify-content: space-between;
     background-color: transparent;
@@ -13,18 +14,20 @@ nav {
 
 .menu {
     width: 100%;
+    max-height: 45px;
     list-style: none;
     display: flex;
-    justify-content: flex-end; /* Align menu items to the right */
+    justify-content: center; /* Align menu items to the right */
     align-items: center;
-    background: #287eff1a;
+    background: var(--main-bg-color);
     margin: 0;
     padding: 0;
+    border-bottom: solid 1px #cccccc;
 }
 
 .menu li, .sidebar li {
     height: 45px;
-    font-size: large;
+    font-size: medium;
 }
 
 .menu-item {
@@ -35,39 +38,29 @@ nav {
 
 .menu-item a {
     height: 100%;
-    padding: 0 15px;
+    padding: 0px 18px;
     margin: 0px;
     border-radius: 0px;
     text-decoration: none;
     display: flex;
     align-items: center;
-    font-weight: 500;
-    color: #000;
+    font-size: large;
+    font-weight: 400;
+    color: var(--main-text-color);
     transition: all 0.3s ease;
 }
 
 /* Dark theme nav link styling */
 body.dark-theme .menu-item a {
-    color: #e0e0e0;
+    color: var(--contrast-text-color);
 }
 
-.active a {
-    color: var(--contrast-text-color);
-    background: var(--first-accent-color);
-    font-weight: bolder;
-}
 
 .menu-item a:hover{
-    color: var(--first-accent-darker-color);
-    background: #348cff38;
+    color: var(--first-accent-color);
     font-weight: bolder;
 }
 
-.active a:hover {
-    color: var(--contrast-text-color);
-    background: var(--first-accent-color);
-    font-weight: bolder;
-}
 
 /* Sidebar styling */
 .sidebar {
@@ -93,6 +86,7 @@ body.dark-theme .sidebar {
 /* Sidebar links */
 .sidebar li {
     width: 100%;
+    list-style: none;
 }
 
 .sidebar a {
@@ -251,6 +245,16 @@ body.dark-theme .logotxt {
 
 .create:hover .drop-down{
         display: block;
+}
+
+.signup2 {
+    background-color: var(--first-accent-color);
+    height: 80%;
+    border-radius: 8px;
+}
+
+.signup2 a{
+    color: var(--contrast-text-color);
 }
 
 /* Responsive design */
